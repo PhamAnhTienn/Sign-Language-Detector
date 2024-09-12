@@ -1,0 +1,59 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+dill
+from-root
+notebook
+boto3
+mypy-boto3-s3
+flask-cors
+flask
+
+# YOLOv5 requirements
+# Usage: pip install -r requirements.txt
+
+# Base ----------------------------------------
+matplotlib
+numpy
+opencv-python
+Pillow
+PyYAML
+requests
+scipy
+torch
+torchvision
+tqdm
+# protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+
+# Logging -------------------------------------
+tensorboard
+# clearml>=1.2.0
+# comet
+
+# Plotting ------------------------------------
+pandas
+seaborn
+
+# Export --------------------------------------
+# coremltools>=6.0  # CoreML export
+# onnx>=1.9.0  # ONNX export
+# onnx-simplifier>=0.4.1  # ONNX simplifier
+# nvidia-pyindex  # TensorRT export
+# nvidia-tensorrt  # TensorRT export
+# scikit-learn<=1.1.2  # CoreML quantization
+# tensorflow>=2.4.1  # TF exports (-cpu, -aarch64, -macos)
+# tensorflowjs>=3.9.0  # TF.js export
+# openvino-dev  # OpenVINO export
+
+# Deploy --------------------------------------
+# tritonclient[all]~=2.24.0
+
+# Extras --------------------------------------
+ipython  # interactive notebook
+psutil  # system utilization
+thop  # FLOPs computation
+# mss  # screenshots
+# albumentations>=1.0.3
+# pycocotools>=2.0  # COCO mAP
+# roboflow
+
+
+-e .
