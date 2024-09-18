@@ -27,10 +27,11 @@ class DataValidation:
                     break
 
                 else:
-                    validation_status = True
                     os.makedirs(self.data_validation_config.data_validation_dir, exist_ok=True)
-                    with open(self.data_validation_config.valid_status_file_dir, 'w') as f:
+                    with open(self.data_validation_config.validation_status_file, 'w') as f:
                         f.write(f"Validation status: {validation_status}")
+            
+            return validation_status
                 
         except Exception as e:
             raise SignException(e, sys)
@@ -46,6 +47,7 @@ class DataValidation:
             
             if status:
                 shutil.copy(self.data_ingestion_artifact.data_zip_file_path, os.getcwd())
+                logging.info("Copy data successfully")
             
             return data_validation_artifact
         

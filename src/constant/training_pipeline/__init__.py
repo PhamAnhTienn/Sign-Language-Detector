@@ -10,7 +10,7 @@ DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 
-DATA_DOWNLOAD_URL: str = "https://github.com/PhamAnhTienn/data/raw/refs/heads/main/sign%20language%20main.zip"
+DATA_DOWNLOAD_URL: str = "https://github.com/PhamAnhTienn/data/raw/refs/heads/main/Sign_language_data.zip"
 
 
 
@@ -36,8 +36,6 @@ MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolov5s.pt"
 MODEL_TRAINER_NO_EPOCHS: int = 1
 
 MODEL_TRAINER_BATCH_SIZE: int = 16
-
-
 
 
 """
