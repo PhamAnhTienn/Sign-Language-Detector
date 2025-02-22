@@ -2,7 +2,7 @@ import sys, os
 import shutil
 from src.pipeline.training_pipeline import TrainPipeline
 from src.exception import SignException
-from src.utils.main_utils import decodeImage, encodeImageIntoBase64
+from src.utils.utils import decodeImage, encodeImageIntoBase64
 from flask import Flask, request, jsonify, render_template,Response
 from flask_cors import CORS
 
